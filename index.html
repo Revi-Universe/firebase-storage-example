@@ -13,6 +13,23 @@
 				<input type="file" id="dropFile" placeholder="select file"/>
 			</section>
 		</main>
+		<script type="module">
+			import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js";
+
+			const firebaseConfig = {
+				apiKey: "AIzaSyCm_8cGnVVYFFNrI-mSCb6S0XHXOQlplow",
+				authDomain: "handlessbrain-ce94c.firebaseapp.com",
+				databaseURL: "https://handlessbrain-ce94c-default-rtdb.firebaseio.com",
+				projectId: "handlessbrain-ce94c",
+				storageBucket: "handlessbrain-ce94c.appspot.com",
+				messagingSenderId: "239080363713",
+				appId: "1:239080363713:web:bebc24cb8834684e31e640",
+				storageBucket: "gs://handlessbrain-ce94c.appspot.com",
+				databaseURL: "https://handlessbrain-ce94c-default-rtdb.firebaseio.com/",
+			};
+
+			const app = initializeApp(firebaseConfig);
+		</script>
 		<script type="module" src="script.js"></script>
     </body>
 </html>
