@@ -1,0 +1,69 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: repeating-linear-gradient(
+        45deg,
+        #8f6be2,
+        #8f6be2 20px,
+        #c589d1 20px,
+        #c589d1 40px
+    );
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 1080px;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 10px;
+    overflow: hidden;
+}
+
+main, section {
+    box-sizing: border-box;
+}
+
+section {
+    width: 100%;
+    text-align: center;
+}
+section.card {
+    max-width: 480px;
+    height: 480px;
+}
+
+.card {
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #f2f2f2;
+    box-shadow: #12121288 0px 4px 5px;
+}
+
+#dropHere {
+    display: block;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    background-image: url("src/madoka0.png");
+    background-repeat: no-repeat;
+    background-size: 110%;
+    background-position: 50% 50%;
+    border-radius: 8px;
+    border: 2px dashed #24242400;
+    transition: .2s ease ;
+    transition-property: border-color,background-size;
+}
+
+#dropHere.on, #dropHere:active{
+    background-image: url("src/madoka1.png");
+    border-color: #24242466;
+    background-size: 130%;
+}
+
+#dropFile {
+    display: none;
+}
